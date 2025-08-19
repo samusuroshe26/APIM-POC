@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "loggerType": "applicationInsights",
+    "credentials": {
+      "instrumentationKey": "{{Logger-Credentials--6899bf9c217d201bb09ad53c}}"
+    },
+    "isBuffered": true,
+    "resourceId": "/subscriptions/0641413f-fb5b-4d03-96cd-9636bffa2233/resourceGroups/demo-rg/providers/microsoft.insights/components/FunctionAppEmplyeeAPI"
+  }
+}

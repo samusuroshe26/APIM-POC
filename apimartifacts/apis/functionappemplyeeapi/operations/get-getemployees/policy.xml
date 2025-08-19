@@ -1,0 +1,26 @@
+<policies>
+	<inbound>
+		<base />
+		<set-backend-service id="apim-generated-policy" backend-id="functionappemplyeeapi" />
+		<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Invalid Login" require-scheme="Bearer">
+			<openid-config url="https://login.microsoftonline.com/fc44b9e7-e3df-4e05-bcfc-db580fd88089/.well-known/openid-configuration" />
+			<audiences>
+				<audience>api://f3e1bcec-30d5-48dd-ad57-f141b6dbf64c</audience>
+			</audiences>
+			<required-claims>
+				<claim name="aud" match="any">
+					<value>api://f3e1bcec-30d5-48dd-ad57-f141b6dbf64c</value>
+				</claim>
+			</required-claims>
+		</validate-jwt>
+	</inbound>
+	<backend>
+		<base />
+	</backend>
+	<outbound>
+		<base />
+	</outbound>
+	<on-error>
+		<base />
+	</on-error>
+</policies>

@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "FunctionAppEmplyeeAPI",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "Import from \u0022FunctionAppEmplyeeAPI\u0022 Function App",
+    "isCurrent": true,
+    "displayName": "FunctionAppEmplyeeAPI",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://apimanagement-demo-service.azure-api.net/FunctionAppEmplyeeAPI",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}

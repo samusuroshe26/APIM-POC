@@ -1,0 +1,75 @@
+openapi: 3.0.1
+info:
+  title: TestAPIM
+  version: '1.0'
+servers:
+  - url: https://apimanagement-demo-service.azure-api.net
+paths:
+  /:
+    get:
+      tags:
+        - WeatherForecast
+      summary: GetWeatherForecast
+      description: GetWeatherForecast
+      operationId: GetWeatherForecast
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WeatherForecast'
+              example: ''
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WeatherForecast'
+              example:
+                - date: string
+                  temperatureC: 0
+                  temperatureF: 0
+                  summary: string
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WeatherForecast'
+              example:
+                - date: string
+                  temperatureC: 0
+                  temperatureF: 0
+                  summary: string
+components:
+  schemas:
+    WeatherForecast:
+      type: object
+      properties:
+        date:
+          type: string
+          format: date
+        temperatureC:
+          type: integer
+          format: int32
+        temperatureF:
+          type: integer
+          format: int32
+          readOnly: true
+        summary:
+          type: string
+          nullable: true
+      additionalProperties: false
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

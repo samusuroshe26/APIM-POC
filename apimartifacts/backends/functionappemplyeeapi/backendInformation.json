@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "credentials": {
+      "header": {
+        "x-functions-key": [
+          "{{functionappemplyeeapi-key}}"
+        ]
+      }
+    },
+    "description": "FunctionAppEmplyeeAPI",
+    "protocol": "http",
+    "resourceId": "https://management.azure.com/subscriptions/0641413f-fb5b-4d03-96cd-9636bffa2233/resourceGroups/demo-rg/providers/Microsoft.Web/sites/FunctionAppEmplyeeAPI",
+    "url": "https://functionappemplyeeapi.azurewebsites.net/api"
+  }
+}
