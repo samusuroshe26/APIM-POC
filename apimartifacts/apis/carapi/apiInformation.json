@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "path": "vehicles",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "description": "",
+    "isCurrent": true,
+    "displayName": "CarAPI",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://vpic.nhtsa.dot.gov/api/vehicles",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": true
+  }
+}

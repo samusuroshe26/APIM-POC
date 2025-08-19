@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "scope": "/subscriptions/0641413f-fb5b-4d03-96cd-9636bffa2233/resourceGroups/demo-rg/providers/Microsoft.ApiManagement/service/APIManagement-DEMO-SERVICE/products/starter",
+    "allowTracing": false,
+    "ownerId": "/subscriptions/0641413f-fb5b-4d03-96cd-9636bffa2233/resourceGroups/demo-rg/providers/Microsoft.ApiManagement/service/APIManagement-DEMO-SERVICE/users/1",
+    "state": "active"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "loggerId": "/subscriptions/0641413f-fb5b-4d03-96cd-9636bffa2233/resourceGroups/demo-rg/providers/Microsoft.ApiManagement/service/APIManagement-DEMO-SERVICE/loggers/functionappemplyeeapi",
+    "alwaysLog": "allErrors",
+    "backend": {
+      "request": {
+        "dataMasking": {
+          "queryParams": [
+            {
+              "mode": "Hide",
+              "value": "*"
+            }
+          ]
+        }
+      }
+    },
+    "frontend": {
+      "request": {
+        "dataMasking": {
+          "queryParams": [
+            {
+              "mode": "Hide",
+              "value": "*"
+            }
+          ]
+        }
+      }
+    },
+    "httpCorrelationProtocol": "Legacy",
+    "logClientIp": true,
+    "sampling": {
+      "percentage": 100,
+      "samplingType": "fixed"
+    }
+  }
+}

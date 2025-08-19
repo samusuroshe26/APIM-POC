@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "displayName": "functionappemplyeeapi-key",
+    "secret": true,
+    "tags": [
+      "key",
+      "function",
+      "auto"
+    ]
+  }
+}

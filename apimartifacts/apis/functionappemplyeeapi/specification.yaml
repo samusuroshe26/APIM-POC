@@ -1,0 +1,29 @@
+openapi: 3.0.1
+info:
+  title: FunctionAppEmplyeeAPI
+  description: Import from "FunctionAppEmplyeeAPI" Function App
+  version: '1.0'
+servers:
+  - url: https://apimanagement-demo-service.azure-api.net/FunctionAppEmplyeeAPI
+paths:
+  /GetEmployees:
+    get:
+      summary: GetEmployees
+      description: GetEmployees
+      operationId: get-getemployees
+      responses:
+        '200':
+          description: ''
+components:
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: [ ]
+  - apiKeyQuery: [ ]

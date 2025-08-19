@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "path": "",
+    "apiRevision": "1",
+    "authenticationSettings": {},
+    "isCurrent": true,
+    "displayName": "TestAPIM",
+    "protocols": [
+      "https"
+    ],
+    "serviceUrl": "https://httptestapiwebapp.azurewebsites.net/",
+    "subscriptionKeyParameterNames": {
+      "header": "Ocp-Apim-Subscription-Key",
+      "query": "subscription-key"
+    },
+    "subscriptionRequired": false
+  }
+}
